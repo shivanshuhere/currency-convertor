@@ -20,7 +20,7 @@ function App() {
     }
     return (
         <div
-            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-blue-800 text-lg"
+            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-lg"
             style={
                 {
                     // backgroundImage: `url('${BackgroundImage}')`,
