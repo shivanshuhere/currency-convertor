@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { InputBox } from "../components";
 import useCurrencyInfo from "../hooks/useCurrencyInfo";
-import { Currency } from "lucide";
 function App() {
     const [amount, setAmount] = useState(0);
     const [from, setFrom] = useState("inr");
@@ -21,7 +20,7 @@ function App() {
     }
     return (
         <div
-            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-blue-800"
+            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-blue-800 text-lg"
             style={
                 {
                     // backgroundImage: `url('${BackgroundImage}')`,
@@ -29,6 +28,9 @@ function App() {
             }
         >
             <div className="w-full">
+                <h2 className="text-center text-4xl text-white mb-4 font-semibold">
+                    Currency Exchange Rate
+                </h2>
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                     <form
                         onSubmit={(e) => {
