@@ -13,11 +13,11 @@ function InputBox({
     const amountInputId = useId(); //uniqe value for id
 
     return (
-        <div className={` p-4 rounded-lg text-sm flex bg-white  ${className}`}>
-            <div className="w-full">
+        <div className={` p-3 rounded-lg bg-white text-sm flex ${className}`}>
+            <div className="w-full bg-white py-1 rounded-lg">
                 <label
                     htmlFor="amountInputId" // attach to input
-                    className="text-black/40 mb-2 inline-block"
+                    className="text-black/40 mb-2 inline-block "
                 >
                     {label}
                 </label>
@@ -34,10 +34,10 @@ function InputBox({
                     }
                 />
             </div>
-            <div className="w-1/2  text-left ">
-                <p className="text-black/40 mb-2 w-full ">Currency Type</p>
+            <div className="w-1/2 flex flex-wrap justify-end text-right">
+                <p className="text-black/40 mb-2 w-full">Currency Type</p>
                 <select
-                    className="   px-1 py-1 bg-gray-100 cursor-pointer outline-none text-"
+                    className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
                     onChange={(e) =>
                         handleCurrencyChange &&

@@ -38,7 +38,7 @@ function App() {
                             convert();
                         }}
                     >
-                        <div className="w-full mb-1">
+                        <div className="w-full mb-1  bg-white rounded-lg">
                             <InputBox
                                 label="From"
                                 amount={amount}
@@ -61,7 +61,7 @@ function App() {
                                 swap
                             </button>
                         </div>
-                        <div className="w-full mt-1 mb-4">
+                        <div className="w-full mt-1 mb-4 bg-white rounded-lg">
                             <InputBox
                                 label="To"
                                 amount={resAmoutn}
