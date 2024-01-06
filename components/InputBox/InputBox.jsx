@@ -13,8 +13,8 @@ function InputBox({
     const amountInputId = useId(); //uniqe value for id
 
     return (
-        <div className={` p-3 rounded-lg bg-white text-sm flex ${className}`}>
-            <div className="w-full bg-white py-1 rounded-lg">
+        <div className=" text-sm flex">
+            <div className="">
                 <label
                     htmlFor="amountInputId" // attach to input
                     className="text-black/40 mb-2 inline-block "
@@ -23,7 +23,7 @@ function InputBox({
                 </label>
                 <input
                     id={amountInputId} // attach to lable
-                    className="outline-none w-full bg-transparent py-1.5"
+                    className="outline-none w-full"
                     type="number"
                     placeholder="Amount"
                     disabled={amountDisable}
